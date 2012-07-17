@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Eat N Bitch</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+    <script type="text/javascript" src="/pubic/index.js"></script>
+    </head>
+  <body>
+    <div id="reviews">
+       <% reviews.all.each do |r| %>
+          <li><b><%= r %></b></li>
+       <% end %>
+   </div>
+     <div id="users">
+     	<% users.all.each do |u| %>
+     	  <li><i><%= u %></i></li>
+     	 <% end %>  
+    </div>
+  </body>
+</html>

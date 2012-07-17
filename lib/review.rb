@@ -1,5 +1,8 @@
 module EatNBitch
 	class Review
+
+		attr_accessor :text, :user, :date
+
 		def initialize(text, user)
 			@text = text
 			@user = user
@@ -20,11 +23,11 @@ module EatNBitch
 			@reviews << Review.new(text,user)
 		end
 
-		def show_all
-			JSON.dump(@reviews.map { |review| review.show})
+		def all
+			@reviews.map { |review| "#{review.user}: #{review.text}\n #{DateTime.now}" }
 		end
-
 	end
+
 end
 
 
