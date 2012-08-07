@@ -1,0 +1,11 @@
+development: &DB_DEFAULTS
+  adapter: mysql2
+  host: localhost
+  database: eatnbitch_development
+  user: root
+  password: password
+  encoding: utf8
+production:
+  <<: *DB_DEFAULTS
+  database: eatnbitch_production
+  password: aqpl2408
