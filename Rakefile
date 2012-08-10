@@ -15,3 +15,10 @@ namespace :db do
     end
   end
 end
+
+
+namespace :xenka do
+	task :penka do
+		puts "Shalom"
+	end
+end

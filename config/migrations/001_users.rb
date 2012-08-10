@@ -14,7 +14,7 @@ Sequel.migration do
       String :city
     end
     
-    create_table(:dish) do
+    create_table(:dishes) do
       primary_key :id
       String :name
       String :description
@@ -22,7 +22,7 @@ Sequel.migration do
     end
     
 
-    create_table(:restaurant) do
+    create_table(:restaurants) do
       primary_key :id
       String :name
       String :address
@@ -31,7 +31,7 @@ Sequel.migration do
     end
 
 
-    create_table(:review) do
+    create_table(:reviews) do
       primary_key :id
       Fixnum :rating
       String :text
