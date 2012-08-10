@@ -6,6 +6,7 @@ require 'uri'
 require 'rest_client'
 require 'nokogiri'
 require 'date'
+require 'erb'
 
 module EatNBitch
   ROOT = File.expand_path(File.join(File.dirname(__FILE__)))

@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <title>Eat N Bitch</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+    <script type="text/javascript" src="/pubic/index.js"></script>
+    </head>
+  <body>
+     <div id="dishes">
+     	<% @dishes.all.each do |u| %>
+     	  <li><i><%= u %></i></li>
+     	 <% end %>  
+    </div>
+  </body>
+</html>

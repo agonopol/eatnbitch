@@ -1,9 +1,8 @@
 require 'sinatra'
-require 'haml'
 require 'sass'
 require 'sass/plugin/rack'
 require 'json'
-require File.expand_path(File.join(File.dirname(__FILE__), '..', 'eatnbitchs'))
+require File.expand_path(File.join(File.dirname(__FILE__), '..', 'eatnbitch'))
 include EatNBitch
 require File.join(ROOT, 'lib', 'web_helpers')
 
@@ -19,7 +18,8 @@ configure :development do
   require File.join(ROOT, 'lib', 'sinatra_reloader')
 end
 
-get '/', :auth => true do
-  @accounts = User.all
-  haml :index
+get '/' do
+  @dishes = DB[:dishes]
+  erb :index
 end
+
