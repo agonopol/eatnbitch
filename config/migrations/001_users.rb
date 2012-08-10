@@ -8,10 +8,10 @@ Sequel.migration do
       String :name
       String :secret
       Boolean :admin
-      Sex   :string 
-      Age :numeric
-      Bio :text
-      City :string
+      String :sex 
+      Integer :age
+      Text :bio
+      String :city
     end
     
     create_table(:dish) do

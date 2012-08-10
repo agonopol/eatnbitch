@@ -10,6 +10,7 @@ namespace :db do
     if version = ENV['VERSION']
       Sequel::Migrator.run(DB, migrations, :target => version.to_i)
     else
+      puts migrations
       Sequel::Migrator.run(DB, migrations)
     end
   end
