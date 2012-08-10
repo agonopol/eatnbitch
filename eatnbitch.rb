@@ -18,5 +18,9 @@ end
 
 require File.join(EatNBitch::ROOT, 'lib', 'core_extensions')
 require File.join(EatNBitch::ROOT, 'lib', 'user')
+require File.join(EatNBitch::ROOT, 'lib', 'dish')
+require File.join(EatNBitch::ROOT, 'lib', 'review')
+require File.join(EatNBitch::ROOT, 'lib', 'restaurant')
+
 
 
